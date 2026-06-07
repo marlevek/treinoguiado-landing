@@ -11,11 +11,21 @@ Landing page estática para `treinoguiado.com.br`.
 ## Estrutura
 
 ```text
-index.html
-assets/
+public/
+  index.html
   css/styles.css
   js/main.js
   img/
+wrangler.toml
 ```
 
-Para visualizar localmente, abra `index.html` no navegador.
+Para visualizar localmente, abra `public/index.html` no navegador.
+
+## Deploy
+
+```bash
+npm install
+npm run deploy
+```
+
+O deploy usa Cloudflare Workers Static Assets via Wrangler, com os assets apontando para `./public`.
